@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(21, 55, 111);
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    font-family: segoe-vf, sans-serif;
+}
+
+#th {
+    background-color: aquamarine;
+    padding: 10px;
+    font-family: segoe-vf, sans-serif;
+}
+
+#td1 {
+    padding: 5px 5px 0% 5px;
+    text-decoration: none;
+    background-color: rgb(226, 245, 245);
+    text-align: center;
+    font-family: segoe-vf, sans-serif;
+    font-weight: bold;
+}
+#td2 {
+    padding: 5px 5px 0% 5px;
+    text-decoration: none;
+    font-family: segoe-vf, sans-serif;
+    background-color: rgb(226, 245, 245);
+}
+#td3 {
+    padding: 5px 5px 0% 5px;
+    text-decoration: none;
+    background-color: rgb(226, 245, 245);
+    width: 50px;
+    font-family: segoe-vf, sans-serif;
+    text-align: center;
+}
+#td4 {
+    padding: 5px 5px 0% 5px;
+    text-decoration: none;
+    font-family: segoe-vf, sans-serif;
+    background-color: rgb(226, 245, 245);
+    
+}
+
