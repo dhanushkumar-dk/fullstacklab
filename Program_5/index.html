@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>CRUD Operations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style media="screen">
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            padding: 5% 10%;
+            margin: auto;
+            background-color: #B7CADB;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CRUD Operations mongodb</h1>
+
+    <div class="container">
+        <div class="container">
+            <h3>Insert Data</h3>
+
+            <form action="/insert" method="post">
+                <div class="form-group">
+                    <label for="search">Enter Name</label>
+                    <input type="text" name="name" id="word" class="form-control" value="">
+                </div>
+
+                <div class="form-group">
+                    <label for="search">Enter Age </label>
+                    <input type="text" name="age" id="word" class="form-control" value="">
+                </div>
+
+                <br>
+
+                <button type="submit" class="btn btn-lg btn-primary" onclick="createReq()">Submit</button>
+            </form>
+        </div>
+
+        <div class="container">
+            <h3>Read Data</h3>
+            <form action="/read" method="post">
+                <div class="form-group">
+                    <label for="search">Enter Name</label>
+                    <input type="text" name="name" id="word" class="form-control" value="">
+                </div>
+
+                <br>
+
+                <button type="submit" class="btn btn-lg btn-primary" onclick="createReq()">Submit</button>
+            </form>
+        </div>
+
+        <div class="container">
+            <h3>Update Data</h3>
+            <form action="/update" method="post">
+                <div class="form-group">
+                    <label for="search">Enter Name</label>
+                    <input type="text" name="name" id="word" class="form-control" value="">
+                </div>
+                <div class="form-group">
+                    <label for="search">Enter Updated Name</label>
+                    <input type="text" name="upname" id="word" class="form-control" value="">
+                </div>
+                <div class="form-group">
+                    <label for="search">Enter Updated Age</label>
+                    <input type="text" name="upage" id="word" class="form-control" value="">
+                </div>
+                <br>
+                <button type="submit" class="btn btn-lg btn-primary" onclick="createReq()">Submit</button>
+            </form>
+        </div>
+
+        <div class="container">
+            <h3>Delete Data</h3>
+            <form action="/delete" method="post">
+                <div class="form-group">
+                    <label for="search">Enter Name</label>
+                    <input type="text" name="name" id="word" class="form-control" value="">
+                </div>
+
+                <br>
+
+                <button type="submit" class="btn btn-lg btn-primary" onclick="createReq()">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
