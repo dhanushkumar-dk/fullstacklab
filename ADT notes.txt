@@ -1,0 +1,59 @@
+Open MySql workbench
+
+root : password
+
+schema (on the left side)
+
+right click -> create scheme -> (Name it) -> Click apply -> Again -> Finish
+
+CREATE SCHEMA 'studentdb';
+
+Click on studentdb
+
+Right click on Tables
+
+Choose Create Table
+
+Give a name for Table (Example : MCA)
+
+	Then create columns with values (SNO, Name, Mark1, Mark2, Mark3, Mark4)
+
+	Make SNO feild as Primary key and Not Null. For this please ensure that 
+PK checkbox and NN checkbox is selected.
+
+The following was the Query 
+
+CREATE TABLE `studentdb`.`mca` (
+  `SNO` INT NOT NULL,
+  `Name` VARCHAR(45) NULL,
+  `Mark1` INT NULL,
+  `Mark2` INT NULL,
+  `Mark3` INT NULL,
+  `Mark4` INT NULL,
+  PRIMARY KEY (`SNO`));
+
+To insert values into the table, hover the mouse on mca table and click on the grid option (3rd one),
+now manually fill the value into the table.
+
+Click Apply option -> Finish
+
+
+Inserting values to the table (MCA)
+
+INSERT INTO `studentdb`.`mca` (`SNO`, `Name`, `Mark1`, `Mark2`, `Mark3`, `Mark4`) VALUES ('1', 'Sasi', '100', '100', '100', '100');
+INSERT INTO `studentdb`.`mca` (`SNO`, `Name`, `Mark1`, `Mark2`, `Mark3`, `Mark4`) VALUES ('2', 'Doshi', '100', '100', '100', '100');
+INSERT INTO `studentdb`.`mca` (`SNO`, `Name`, `Mark1`, `Mark2`, `Mark3`, `Mark4`) VALUES ('3', 'Dhanush', '100', '100', '100', '100');
+INSERT INTO `studentdb`.`mca` (`SNO`, `Name`, `Mark1`, `Mark2`, `Mark3`, `Mark4`) VALUES ('4', 'Dhayabaran', '100', '100', '100', '100');
+INSERT INTO `studentdb`.`mca` (`SNO`, `Name`, `Mark1`, `Mark2`, `Mark3`, `Mark4`) VALUES ('5', 'Hari', '100', '100', '100', '100');
+
+To delete row from the table, Drop row from table.
+
+In Tables (mca) -> Click on repair option.
+	1. Now choose a row
+	2. Right click 
+	3. Delete Row(s)
+	4. Apply
+	5. The following was the Query snippet
+
+ALTER TABLE `studentdb`.`mca` 
+DROP COLUMN `Mark4`;
